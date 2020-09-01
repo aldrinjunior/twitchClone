@@ -3,6 +3,9 @@ import { FlatList, View } from "react-native";
 
 import Header from "../../components/Header";
 import Heading from "../../components/Heading";
+import Title from "../../components/Title";
+import CategoryList from "../../components/CategoryList";
+import StreamList from "../../components/StreamList";
 
 import { Wrapper, Container, Main } from "./styles";
 
@@ -22,25 +25,25 @@ const Following: React.FC = () => {
       },
       {
         key: "FOLLOWED_CATEGORIES",
-        render: () => <View />,
+        render: () => <Title>Followed Categories</Title>,
         isTitle: true,
       },
       {
         key: "C1",
-        render: () => <View />,
+        render: () => <CategoryList />,
       },
       {
         key: "LIVE_CHANNELS",
-        render: () => <View />,
+        render: () => <Title>Live Channels</Title>,
         isTitle: true,
       },
       {
         key: "C2",
-        render: () => <View />,
+        render: () => <StreamList />,
       },
       {
         key: "CONTINUE_WATCHING",
-        render: () => <View />,
+        render: () => <Title>Continue Watching</Title>,
         isTitle: true,
       },
       {
@@ -49,7 +52,7 @@ const Following: React.FC = () => {
       },
       {
         key: "OFFLINE_CHANNELS",
-        render: () => <View />,
+        render: () => <Title>Offline Channels</Title>,
         isTitle: true,
       },
       {
